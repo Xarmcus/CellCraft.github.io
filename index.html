@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play CellCraft</title>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-</head>
-<body>
-    <h2>CellCraft - Embedded Game</h2>
-    <div id="ruffle-container">
-        <script>
-            window.RufflePlayer = window.RufflePlayer || {};
-            window.addEventListener("DOMContentLoaded", () => {
-                const ruffle = window.RufflePlayer.newest();
-                const player = ruffle.createPlayer();
-                document.getElementById("ruffle-container").appendChild(player);
-                player.load("https://www.carolina.com/html/flash/cellcraft.swf"); // Update this if needed
-            });
-        </script>
-    </div>
-</body>
-</html>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+<div id="ruffle-container">
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("DOMContentLoaded", () => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            document.getElementById("ruffle-container").appendChild(player);
+            player.load("cellcraft.swf"); // Now hosted on your GitHub
+        });
+    </script>
+</div>
